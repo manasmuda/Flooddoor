@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    tools:context=".DetailsActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="TEAM MEMBERS"
+        android:textColor="@color/colorPrimary"
+        android:textSize="32dp"
+        android:layout_gravity="center_horizontal"
+        android:textStyle="bold"
+        android:layout_marginBottom="30dp"/>
+
+    <TextView
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:textSize="24dp"
+        android:text="K.R.M Parameswar - 17BCE0311"
+        android:padding="5dp"/>
+
+    <TextView
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:textSize="24dp"
+        android:text="Muda Sai Manas - 17BCE0706"
+        android:padding="5dp"/>
+
+    <TextView
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:textSize="24dp"
+        android:text="Bejgam Vaibhav - 17BCE0286"
+        android:padding="5dp"/>
+
+    <TextView
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:textSize="24dp"
+        android:text="K Praneeth - 17BCE0312"
+        android:padding="5dp"/>
+
+    <TextView
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:textSize="24dp"
+        android:text="N Chaitanyanath - 17BCE2126"
+        android:padding="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FACULTY NAME:"
+        android:textColor="@color/colorPrimary"
+        android:textSize="32dp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:textSize="26dp"
+        android:text="VAIRAMUTHU S,\nAssociate Professor, SCOPE"
+        android:gravity="center_horizontal"
+        android:padding="8dp"/>
+
+    <Button
+        android:id="@+id/ad_continue_button"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="150dp"
+        android:text="CONTINUE"
+        android:textSize="22dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/curvedbluebutton"/>
+
+
+</LinearLayout>

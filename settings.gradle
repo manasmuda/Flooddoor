@@ -1,0 +1,3 @@
+include ':pushnotifications'
+include ':app'
+rootProject.name = "FlooDoor"

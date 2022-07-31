@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".RainfallPrediction">
+
+    <TextView
+        android:id="@+id/rp_title"
+        android:layout_width="wrap_content"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="48dp"
+        android:text="RAINFALL\nPREDICTION"
+        android:textColor="@color/colorPrimary"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/rp_back_button"
+        android:src="@mipmap/ic_back_arrow_round"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:layout_margin="10dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/rp_input_layout"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rp_title"
+        app:layout_constraintVertical_bias="0.05"
+        tools:layout_editor_absoluteX="0dp">
+
+        <TextView
+            android:id="@+id/rp_ss_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22dp"
+            android:textColor="@color/colorPrimary"
+            android:text="Select State"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.15"
+            app:layout_constraintVertical_bias="0.1"/>
+
+        <Spinner
+            android:id="@+id/rp_ss_spinner"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            app:layout_constraintLeft_toLeftOf="@id/rp_ss_title"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/rp_ss_title"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintVertical_bias="0.05"
+            android:background="@drawable/spinner_background"
+            android:spinnerMode="dropdown"/>
+
+        <TextView
+            android:id="@+id/rp_sd_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22dp"
+            android:textColor="@color/colorPrimary"
+            android:text="Select Month"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/rp_ss_spinner"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.15"
+            app:layout_constraintVertical_bias="0.2"/>
+
+        <Spinner
+            android:id="@+id/rp_dp_spinner"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            tools:layout_editor_absoluteX="106dp"
+            tools:layout_editor_absoluteY="288dp"
+            app:layout_constraintLeft_toLeftOf="@id/rp_sd_title"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/rp_sd_title"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintVertical_bias="0.05"
+            android:background="@drawable/spinner_background"
+            android:spinnerMode="dropdown"/>
+
+        <TextView
+            android:id="@+id/rp_sy_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22dp"
+            android:textColor="@color/colorPrimary"
+            android:text="Select Year"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/rp_dp_spinner"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.15"
+            app:layout_constraintVertical_bias="0.2"/>
+
+        <Spinner
+            android:id="@+id/rp_yp_spinner"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            tools:layout_editor_absoluteX="106dp"
+            tools:layout_editor_absoluteY="288dp"
+            app:layout_constraintLeft_toLeftOf="@id/rp_sy_title"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/rp_sy_title"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintVertical_bias="0.05"
+            android:background="@drawable/spinner_background"
+            android:spinnerMode="dropdown"/>
+
+        <Button
+            android:id="@+id/rp_submit"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/curvedbluebutton"
+            android:text="SUBMIT"
+            android:textSize="24dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/rp_yp_spinner"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginTop="20dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/rp_oytput_layout"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rp_title"
+        app:layout_constraintVertical_bias="0.05"
+        tools:layout_editor_absoluteX="0dp">
+
+        <TextView
+            android:id="@+id/rp_output"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="58dp"
+            android:textColor="#000000"
+            android:text="100mm"
+            android:gravity="center"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.2"/>
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/rp_output_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="58dp"
+            android:textColor="#44ff55"
+            android:text="NO\nRAINFALL"
+            android:gravity="center"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/rp_output"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.2"/>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rp_output"
+            app:layout_constraintVertical_bias="0.724"
+            app:srcCompat="@drawable/rainfall1" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

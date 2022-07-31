@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "113869774427",
+    "firebase_url": "https://floodoor.firebaseio.com",
+    "project_id": "floodoor",
+    "storage_bucket": "floodoor.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:113869774427:android:474731dde8d04746ea297e",
+        "android_client_info": {
+          "package_name": "com.msm.floodoor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "113869774427-d9fca4ttvsli4qp59vdqk835mes3h530.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.msm.floodoor",
+            "certificate_hash": "dca7a400de05d7164aad2b8f1f449e3449f30205"
+          }
+        },
+        {
+          "client_id": "113869774427-pla8o5na0pp40tdg03v9ktue0kj73i4i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBtrEqtpUcV8d9DpoRkD1fgWtP6TPt_UUY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "113869774427-pla8o5na0pp40tdg03v9ktue0kj73i4i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
